@@ -1,25 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins&display=swap');
+
 body{
     width: 100vw;
     height: 100vh;
     background-color: hsl(217, 19%, 24%);
     overflow-x: hidden;
-    Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-    font-Weights: 800
 }
 .container{
-    width: 35%;
-    height: 40%;
+    width: 45%;
+    padding: 10px 30px;
+    height: 53%;
     margin: 15% auto;
     background-color: hsl(217, 19%, 38%);
-    border-radius: 5px;
-    border: 1px solid red;
+    border-radius: 10px;
+}
+.pattern{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.line{
+    width: 45%;
+    height: 0.5px;
+    color: hsl(217, 19%, 38%);
+}
+i{
+    color: hsl(193, 38%, 86%);
+    font-size: 26px; 
 }
 .inner-cont{
-    margin: 30px;
-    border: 1px solid green;
-    background-color: white;
+    margin: 0px auto;
+    width: fit-content;
+    min-width: 100%;
+    text-align: center;
 }
 #pag{
     text-align: center;
+    color: hsl(150, 100%, 66%);
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 5px;
+}
+.dice{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    top: 81%;
+    left: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2, span[id='advice-slip']{
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+}
 
+@media screen and (max-width: 540px) {
+    #pag{
+        font-size: 15px;
+    }
+    .container{
+        width: 210px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+    }
+    h2, span[id='advice-slip']{
+        font-size: 15px;
+        text-align: center;
+    }
 }
